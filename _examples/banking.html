@@ -1,0 +1,94 @@
+---
+layout: default
+title: Banking App
+---
+
+
+{% capture app_header %}
+<!-- App Header -->
+<div class="flex items-center justify-between w-full h-12 p-3">
+
+    <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+    </svg>
+
+    <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+
+</div>
+<!-- end App Header -->
+{% endcapture %}
+
+
+
+<div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-3 h-screen divide-x divide-y divide-gray-200">
+
+
+    <div class="h-full w-full bg-gray-50 py-10 px-6">
+
+        <div class="bg-gray-100 shadow-md rounded-lg mx-auto device-viewport pixel-3a">
+    
+            <div class="h-1/2">
+    
+                {{ app_header }}
+    
+                <!-- My Cards -->
+                <div class="w-full h-2/5 p-6">
+    
+                    <h2 class="font-medium text-black mb-4">My Cards</h2>
+    
+                    <div class="w-full h-48 bg-white rounded-xl shadow">
+    
+                    </div>
+    
+                </div>
+    
+            </div>
+    
+            <!-- Transactions -->
+            <div class="w-full h-1/2 bg-white rounded-t-2xl p-6 overflow-auto overscroll-contain hide-scrollbar">
+    
+                <h2 class="font-medium text-black mb-4">Latest Transactions</h2>
+    
+                <div class="py-2 ">
+    
+                    {% for i in (1..10) %}
+                    <div class="flex items-center gap-3 mb-2">
+    
+                        <img class="w-12 h-12" src="https://placehold.it/300x300" />
+    
+                        <div class="flex-grow">
+                            
+                            <h5 class="w-full h-4 bg-gray-100 mb-2"></h5>
+    
+                            <div class="w-full h-3 bg-gray-100"></div>
+    
+                        </div>
+    
+                        <div class="">+$200</div>
+                    
+                    </div>
+                    {% endfor %}
+    
+                </div>
+    
+            </div>
+    
+        </div>
+    
+    </div>
+
+
+    {% for i in (1..5) %}
+    <div class="h-full w-full bg-gray-50 py-10 px-6">
+
+
+    </div>
+        
+
+    {% endfor %}
+
+
+
+</div>

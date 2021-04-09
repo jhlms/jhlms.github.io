@@ -1,0 +1,37 @@
+device-viewport {
+    width: 375px;
+    height: 812px;
+}
+
+.iphone-8 {
+    width: 375px !important;
+    height: 667px !important;
+}
+
+.iphone-x {
+    width: 375px !important;
+    height: 812px !important;
+    
+}
+
+.ipad-pro {
+    width: 1024px;
+    height: 1366px;
+}
+
+.pixel-3a {
+    width: 412px !important;
+    height: 846px !important;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .hide-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
